@@ -143,8 +143,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: |
-            docker-compose.production.yml
-            .env
+            taski-docker/docker-compose.production.yml
+            taski-docker/.env
           target: "taski-docker"
 
       - name: Executing remote ssh commands to deploy
