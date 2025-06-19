@@ -121,5 +121,6 @@ CORS_ORIGIN_WHITELIST = [
     "https://ya-test.webhop.me",
     "http://localhost:3000",
 ]
+CSRF_TRUSTED_ORIGINS = ["https://ya-test.webhop.me"]
 
 CSRF_COOKIE_SECURE = True
