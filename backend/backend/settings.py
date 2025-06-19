@@ -8,7 +8,7 @@ SECRET_KEY = "django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["ya-test.webhop.me", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -116,12 +116,8 @@ STATIC_ROOT = BASE_DIR / "collected_static"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8000",
-    "https://ya-test.webhop.me",
-    "http://localhost:3000",
-]
-CSRF_TRUSTED_ORIGINS = ["https://ya-test.webhop.me"]
+CORS_ORIGIN_WHITELIST = ["*"]
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
