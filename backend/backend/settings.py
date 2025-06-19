@@ -125,4 +125,3 @@ CSRF_TRUSTED_ORIGINS = ["https://ya-test.webhop.me"]
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
-
